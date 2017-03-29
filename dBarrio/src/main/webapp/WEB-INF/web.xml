@@ -1,0 +1,28 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <!-- utilizamos el servlet de spring MVC -->
+	<servlet>
+		<servlet-name>application-context</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- declaracion de beans utilizados por spring MVC y asociacion entre vistas y controladores --> 
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/application-context.xml</param-value>
+	</context-param>
+	
+	<!-- hacemos que la extension .autentia utilice el servlet de spring -->
+	<servlet-mapping>
+		<servlet-name>application-context</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+ 
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

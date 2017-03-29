@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:8889/mercadolocal</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">true</property> 
+        
+        <mapping class="com.dbarrio.model.dto.Provincias" />
+        <mapping class="com.dbarrio.model.dto.Municipios" />
+        <mapping class="com.dbarrio.model.dto.Pedido" />
+        <mapping class="com.dbarrio.model.dto.Usuario" />
+        <mapping class="com.dbarrio.model.dto.Alimentacion" />
+        <mapping class="com.dbarrio.model.dto.Marcas" />
+        <mapping class="com.dbarrio.model.dto.Productos" />
+        <mapping class="com.dbarrio.model.dto.Ropa" />
+        <mapping class="com.dbarrio.model.dto.Subtipo" />
+        <mapping class="com.dbarrio.model.dto.Tipo" />
+        <mapping class="com.dbarrio.model.dto.Tallas" />
+        <mapping class="com.dbarrio.model.dto.Tipoproducto" />
+        <mapping class="com.dbarrio.model.dto.Chat" />
+        <mapping class="com.dbarrio.model.dto.Recomendaciones" />
+        <mapping class="com.dbarrio.model.dto.ProductosHasPedido" />
+        <mapping class="com.dbarrio.model.dto.ProductosHasPedidoId" />
+    </session-factory>
+</hibernate-configuration>

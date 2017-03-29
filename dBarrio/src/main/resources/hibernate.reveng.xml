@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="mercadolocal" match-name="alimentacion"/>
+  <table-filter match-catalog="mercadolocal" match-name="chat"/>
+  <table-filter match-catalog="mercadolocal" match-name="marcas"/>
+  <table-filter match-catalog="mercadolocal" match-name="municipios"/>
+  <table-filter match-catalog="mercadolocal" match-name="pedido"/>
+  <table-filter match-catalog="mercadolocal" match-name="productos"/>
+  <table-filter match-catalog="mercadolocal" match-name="provincias"/>
+  <table-filter match-catalog="mercadolocal" match-name="ropa"/>
+  <table-filter match-catalog="mercadolocal" match-name="subtipo"/>
+  <table-filter match-catalog="mercadolocal" match-name="subtipo_has_tipoproducto"/>
+  <table-filter match-catalog="mercadolocal" match-name="tallas"/>
+  <table-filter match-catalog="mercadolocal" match-name="tipo"/>
+  <table-filter match-catalog="mercadolocal" match-name="tipoproducto"/>
+  <table-filter match-catalog="mercadolocal" match-name="usuario"/>
+  <table-filter match-catalog="mercadolocal" match-name="recomendaciones"/>
+  <table-filter match-catalog="mercadolocal" match-name="productos_has_pedido"/>
+</hibernate-reverse-engineering>
