@@ -38,11 +38,11 @@
 		<property name="suffix" value=".jsp" />
 	</bean>-->
 
-	<!-- <context:property-placeholder location="classpath:jdbc.properties" />-->
+	<context:property-placeholder location="classpath:jdbc.properties" />
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-        p:driverClassName="com.mysql.jdbc.Driver" p:url="jdbc:mysql://localhost:8889/mercadolocal"
-        p:username="root" p:password="root">
+        p:driverClassName="com.mysql.jdbc.Driver" p:url="{jdbc.url}"
+        p:username="{jdbc.user}" p:password="{jdbc.password}">
 	</bean>
 	
 	<bean id="sessionFactory"
