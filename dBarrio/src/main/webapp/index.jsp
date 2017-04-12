@@ -1322,7 +1322,7 @@ var geodir_map_v3_home_map_1_jason_args = {"geodir_map_v3_home_map_1_jason":"[{\
 		<li id="wp-admin-bar-updates"><a class="ab-item" href="http://localhost:8888/wordpress/wp-admin/update-core.php" title="1 actualización de plugin"><span class="ab-icon"></span><span class="ab-label">1</span><span class="screen-reader-text">1 actualización de plugin</span></a>		</li>
 		
 		<li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost:8888/wordpress/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text">0 comentarios est&aacute;n esperando moderación</span></a>		</li>
-		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wordpress/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">Nuevo</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="newUser.do"><span class="ab-icon"></span><span class="ab-label">Nuevo</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
 		<li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost:8888/wordpress/wp-admin/post-new.php">Entrada</a>		</li>
 		<li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost:8888/wordpress/wp-admin/media-new.php">Medio</a>		</li>
 		<li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost:8888/wordpress/wp-admin/post-new.php?post_type=page">P&aacute;gina</a>		</li>

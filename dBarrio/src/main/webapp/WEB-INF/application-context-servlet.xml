@@ -4,42 +4,35 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
     xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
 		xsi:schemaLocation="http://www.springframework.org/schema/beans 
 		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd 
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-4.3.xsd
-		http://www.springframework.org/schema/tx
-    	http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+    	http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<context:component-scan base-package="com.dbarrio.controller"/>
-	<!-- se declaran los controladores en un xml aparte 
-	<import resource="resources/controllers.xml" />-->
+
+	 <!-- Specifying base package of the Components like Controller, Service, DAO -->
+	<context:component-scan base-package="com.dbarrio.controller.usuario"/>
+	
+	<!-- Configures the @Controller programming model -->
+	<mvc:annotation-driven/>
 	
 	<bean id="viewResolver"
 	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/jsp/" />
 	<property name="suffix" value=".jsp" />
 	</bean>
-	
-	<!-- se mapean las url, para dada una direccion, saber qué controlador invocar 
-	<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
-		<property name="mappings">
-			<props>
-				<prop key="autentia.autentia">autentiaController</prop>		
-				<prop key="adictosaltrabajo.autentia">adictosaltrabajoController</prop>		
-			</props>
-		</property>
-	</bean>-->
-	
-	<!-- genera el nombre del jsp a invocar segun las reglas de navegabilidad de los controladores 
-	<bean id="viewResolver"	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-		<property name="prefix" value="/WEB-INF/jsp/" />
-		<property name="suffix" value=".jsp" />
-	</bean>-->
 
-	<context:property-placeholder location="classpath:jdbc.properties" />
+	<!-- Getting Database properties 
+	<context:property-placeholder location="classpath:jdbc.properties" />-->
+    
+    
+    <!-- Specifying the Resource location to load JS, CSS, Images etc 
+    <mvc:resources mapping="/resources/**" location="/resources/" /> -->
 	
+	<!-- 
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
         p:driverClassName="com.mysql.jdbc.Driver" p:url="{jdbc.url}"
         p:username="{jdbc.user}" p:password="{jdbc.password}">
@@ -53,9 +46,5 @@
 	
 	<bean id="transactionManager" class = "org.springframework.orm.hibernate5.HibernateTrasactionManager">
 		<property name="sessionFactory" ref="sessionFactory"/>
-	</bean>
-	
-	
-	
-	<tx:annotation-driven />
+	</bean> -->
 </beans>

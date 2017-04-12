@@ -1,4 +1,4 @@
-package com.mercadolocal.test;
+package com.dbarrio.test;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

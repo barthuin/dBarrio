@@ -1,4 +1,4 @@
-package com.mercadolocal.test;
+package com.dbarrio.test;
 
 import static org.junit.Assert.*;
 
