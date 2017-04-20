@@ -21,18 +21,18 @@
 	
 	<bean id="viewResolver"
 	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	<property name="prefix" value="/WEB-INF/jsp/" />
+	<property name="prefix" value="/" />
 	<property name="suffix" value=".jsp" />
 	</bean>
 
-	<!-- Getting Database properties 
-	<context:property-placeholder location="classpath:jdbc.properties" />-->
+	<!-- Getting Database properties -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
     
     
-    <!-- Specifying the Resource location to load JS, CSS, Images etc 
-    <mvc:resources mapping="/resources/**" location="/resources/" /> -->
+    <!-- Specifying the Resource location to load JS, CSS, Images etc--> 
+    <mvc:resources mapping="/resources/**" location="/resources/" /> 
 	
-	<!-- 
+	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
         p:driverClassName="com.mysql.jdbc.Driver" p:url="{jdbc.url}"
         p:username="{jdbc.user}" p:password="{jdbc.password}">
@@ -46,5 +46,5 @@
 	
 	<bean id="transactionManager" class = "org.springframework.orm.hibernate5.HibernateTrasactionManager">
 		<property name="sessionFactory" ref="sessionFactory"/>
-	</bean> -->
+	</bean> 
 </beans>

@@ -309,7 +309,8 @@ var geodir_var = {"siteurl":"http:\/\/localhost:8888\/wordpress","geodir_plugin_
 
 		<div class="site-logo-wrap">
 							<div class='site-logo'>
-					<a href='http://localhost:8888/wordpress/' title='wordpress' rel='home'><img src='./themes/supreme-directory/images/logo.png' alt='wordpress'></a>
+					<!-- <a href='http://localhost:8888/wordpress/' title='wordpress' rel='home'><img src='./themes/supreme-directory/images/logo.png' alt='wordpress'></a> -->
+					<a href='http://localhost:8888/wordpress/' title='wordpress' rel='home'><img src='./imagenes/dBarrio1_2.png' alt='wordpress'></a>
 				</div>
 					</div>
 		

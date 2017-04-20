@@ -8,7 +8,6 @@ public class UsuarioController {
 	
 	@RequestMapping("/newUser.do")
 	public String Lista() {
-		System.out.println("Entramos en el controlador");
 		return "user/newUser";
 	}
 	@RequestMapping("/Formulario")
